@@ -1,4 +1,5 @@
 # Literature-review(public)
+# 最终目的:让自动驾驶电动卡车在存在电气化公路（ERS）的环境中，自主决定“何时走ERS路段 / 何时编队 / 何时独行 / 何时充电”，以最小化能耗 + 行程时间 + 充电次数。
 # 电动卡车
 ## 1. Is electric truck a viable alternative to diesel truck in long-haul operation?(2024)
 ### 提出电动卡车在物流运输方面与原来汽油重卡的对比:
