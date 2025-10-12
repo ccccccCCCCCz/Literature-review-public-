@@ -2,9 +2,10 @@
 # 最终目的:让自动驾驶电动卡车在存在电气化公路（ERS）的环境中，自主决定“何时走ERS路段 / 何时编队 / 何时独行 / 何时充电”，以最小化能耗 + 行程时间 + 充电次数。
 # GVRP
 ## 1.A Green Vehicle Routing Problem(2012)
-(1)提出两种方法the Modified Clarke and Wright Savings heuristic and the Density-Based Clustering Algorithm<br>
-(2)图扩展技巧(补能站多次访问):建立虚拟顶点<br>
-(3)1.一类车辆路径问题的概念化，涉及加油能力有限和加油站可用性有限的车辆；<br>
+(1)提出两种方法the Modified Clarke and Wright Savings heuristic and the Density-Based Clustering Algorithm(MCWS和DBCA)<br>
+(2)其中MCWS继承C-W算法(C-W算法就是计算两点之间节约值进行合并，类似最小生成树)，DBCA继承DBSCAN(DBSCAN就是聚类的分类方式)
+(3)图扩展技巧(补能站多次访问):建立虚拟顶点<br>
+(4)1.一类车辆路径问题的概念化，涉及加油能力有限和加油站可用性有限的车辆；<br>
    2. 开发和测试用于解决大型现实世界问题实例的有效启发法，包括在燃料消耗和补充时跟踪燃料水平的具体步骤，以及通过在途中选择性地访问非唯一加油站来延长车辆的距离限制；
    3.深入了解站点和客户的地理分布对运营可行性的影响；<br>
    4.鉴于当前可用的车辆技术和有限的支持基础设施部署，支持机构减少碳足迹的工具。
