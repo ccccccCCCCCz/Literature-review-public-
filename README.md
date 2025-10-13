@@ -1,5 +1,8 @@
 # Literature-review(public)
 # 最终目的:让自动驾驶电动卡车在存在电气化公路（ERS）的环境中，自主决定“何时走ERS路段 / 何时编队 / 何时独行 / 何时充电”，以最小化能耗 + 行程时间 + 充电次数。(宏观+微观)
+# 微观层面RL智能体指导车辆自动驾驶
+## 1.Automated eco-driving in urban scenarios using deep reinforcement learning(2021)--->https://www.sciencedirect.com/science/article/pii/S0968090X2100005X
+
 # GVRP(宏观，暂时先不看)
 ## 1.A Green Vehicle Routing Problem(2012)
 (1)提出两种方法the Modified Clarke and Wright Savings heuristic and the Density-Based Clustering Algorithm(MCWS和DBCA)<br>
