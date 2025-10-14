@@ -1,7 +1,10 @@
 # Literature-review(public)
 # 最终目的:让自动驾驶电动卡车在存在电气化公路（ERS）的环境中，自主决定“何时走ERS路段 / 何时编队 / 何时独行 / 何时充电”，以最小化能耗 + 行程时间 + 充电次数。(宏观+微观)
-# 微观层面RL智能体指导车辆自动驾驶
-## 1.Automated eco-driving in urban scenarios using deep reinforcement learning(2021)--->https://www.sciencedirect.com/science/article/pii/S0968090X2100005X
+
+# 混合动力RL指导
+## 1.Deep reinforcement learning enabled self-learning control for energy efficient driving(2019)--->https://www.sciencedirect.com/science/article/pii/S0968090X18318862
+(1)
+## 2.Automated eco-driving in urban scenarios using deep reinforcement learning(2021)--->https://www.sciencedirect.com/science/article/pii/S0968090X2100005X
 (1)结构:1.introduction 减少碳排+自动辅助驾驶技术--->生态驾驶+具体算法(MPC、DPP、RL)--->具体场景(前方有车+V2X覆盖率低)TD3 <br>
         2.模拟环境:1)车辆建模:扭矩 T 和转速 n 进行建模(实际后续高层RL用不到)  2)流量建模:前车+红绿灯，使用IDM模型，过滤车速低的，获取车速分布取中值，车辆的驶入与驶出  3)参考策略:控制目标速度，不超过最高不低于最低<br>
         3.RL agent:1)具体智能体构造(TD3):一个动作网络两个评判网络 2)设置奖励值:R=r(通过红绿灯奖励)-ropt(速度惩罚)-ra(加速度惩罚)-rmon(安全监视器)<br>
