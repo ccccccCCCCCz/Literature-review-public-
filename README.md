@@ -20,7 +20,8 @@
 2.related work:传统方法(提供局部稳定性+string stability)--->提出具体的普通RL方法+不足--->具体场景下的应用(匝道)<br>
 3.Preliminaries and Methods:Preliminary Knowledge:强化学习基础相关的内容+多智能体RL---->集中训练分散执行方法<br>
 Methods:Truck Platoon Communication Topology:说明具体运作交换信息的车辆是前车和后车，避免了计算资源浪费<br>
-<br>
+Crucial Elements:主要介绍PPO的构成(批判者观察全局+参与者只关注自身)--->将state、action、reward(速度、能耗和安全)进行详细描述--->算法伪代码介绍<br>
+4.<br>
 (3)提供了MAPPO可以作为未来的baseline；<br>
    局部稳定性:每一辆车都能根据自己的控制系统，稳定地跟踪目标速度和位置。(就是每辆车都能控制好自己)；<br>
    string stability:整个车队在行驶过程中，误差不会沿着队列放大传播。(就是前面车减速1，后面都是1，不会2、3累加)<br>
