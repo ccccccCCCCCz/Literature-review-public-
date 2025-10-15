@@ -12,6 +12,11 @@
         3.RL agent:1)具体智能体构造(TD3):一个动作网络两个评判网络 2)设置奖励值:R=r(通过红绿灯奖励)-ropt(速度惩罚)-ra(加速度惩罚)-rmon(安全监视器)<br>
         4.结果:训练+测评(自己对比+与GLOSA 策略对比+对惩罚单独测评)<br>
         5.结论<br>
+
+# 从单车到车队(使用RL)
+## 1.Research on Reinforcement-Learning-Based Truck Platooning Control Strategies in Highway On-Ramp Regions(2023)--->https://www.mdpi.com/2032-6653/14/10/273
+(1)<br>
+
 # GVRP(宏观，暂时先不看)
 ## 1.A Green Vehicle Routing Problem(2012)
 (1)提出两种方法the Modified Clarke and Wright Savings heuristic and the Density-Based Clustering Algorithm(MCWS和DBCA)<br>
