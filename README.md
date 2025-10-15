@@ -16,6 +16,7 @@
 # 从单车到车队(使用RL)
 ## 1.Research on Reinforcement-Learning-Based Truck Platooning Control Strategies in Highway On-Ramp Regions(2023)--->https://www.mdpi.com/2032-6653/14/10/273
 (1)<br>
+(2)提供了MAPPO可以作为未来的baseline<br>
 
 # GVRP(宏观，暂时先不看)
 ## 1.A Green Vehicle Routing Problem(2012)
