@@ -1,7 +1,7 @@
 # Literature-review(public)
 # 最终目的:让自动驾驶电动卡车在存在电气化公路（ERS）的环境中，自主决定“何时走ERS路段 / 何时编队 / 何时独行 / 何时充电”，以最小化能耗 + 行程时间 + 充电次数。(宏观+微观)
 
-# 混合动力RL指导
+# 单车RL控制
 ## 1.Deep reinforcement learning enabled self-learning control for energy efficient driving(2019)--->https://www.sciencedirect.com/science/article/pii/S0968090X18318862
 (1)这篇论文提出了一种基于深度强化学习（DQN 与 DDQN）的自学习能量管理方法，使插电式混合动力车辆（PHEV）能够在无需预定义驾驶循环的情况下实现实时能效最优控制。<br>
 (2)这项工作是将深度强化学习（DQN 和 DDQN）应用于 PHEV EMS 最优控制的先驱之一，也就是把DRL融入到混合动力车辆的先驱。<br>
@@ -21,7 +21,8 @@
 3.Preliminaries and Methods:Preliminary Knowledge:强化学习基础相关的内容+多智能体RL---->集中训练分散执行方法<br>
 Methods:Truck Platoon Communication Topology:说明具体运作交换信息的车辆是前车和后车，避免了计算资源浪费<br>
 Crucial Elements:主要介绍PPO的构成(批判者观察全局+参与者只关注自身)--->将state、action、reward(速度、能耗和安全)进行详细描述--->算法伪代码介绍<br>
-4.Simulation:仿真平台(SUMO(坡度+IV))+卡车纵向动力学<br>
+4.Simulation:仿真平台(SUMO(坡度+IV))+卡车纵向动力学(会受到的不同力+计算不同风阻)+说明神经网络情况+把IDM和CACC作为baseline<br>
+5.Result:<br>
 (3)提供了MAPPO可以作为未来的baseline；<br>
    局部稳定性:每一辆车都能根据自己的控制系统，稳定地跟踪目标速度和位置。(就是每辆车都能控制好自己)；<br>
    string stability:整个车队在行驶过程中，误差不会沿着队列放大传播。(就是前面车减速1，后面都是1，不会2、3累加)<br>
