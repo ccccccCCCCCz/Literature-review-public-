@@ -7,7 +7,8 @@
 (2)这项工作是将深度强化学习（DQN 和 DDQN）应用于 PHEV EMS 最优控制的先驱之一，也就是把DRL融入到混合动力车辆的先驱。<br>
 (3)无模型:不需要传统控制方法（例如 MPC）通常需要的车辆动力学模型。<br>
 ## 2.Automated eco-driving in urban scenarios using deep reinforcement learning(2021)--->https://www.sciencedirect.com/science/article/pii/S0968090X2100005X
-(1)结构:1.introduction 减少碳排+自动辅助驾驶技术--->生态驾驶+具体算法(MPC、DPP、RL)--->具体场景(前方有车+V2X覆盖率低)TD3 <br>
+(1)这篇论文提出了一种基于深度强化学习（TD3）的生态驾驶策略，用于城市道路环境中，在有红绿灯、前车和交通信号不完全可预测的情况下自动调节速度，实现节能驾驶同时维持交通流畅性。<br>
+(2)结构:1.introduction 减少碳排+自动辅助驾驶技术--->生态驾驶+具体算法(MPC、DPP、RL)--->具体场景(前方有车+V2X覆盖率低)TD3 <br>
         2.模拟环境:1)车辆建模:扭矩 T 和转速 n 进行建模(实际后续高层RL用不到)  2)流量建模:前车+红绿灯，使用IDM模型，过滤车速低的，获取车速分布取中值，车辆的驶入与驶出  3)参考策略:控制目标速度，不超过最高不低于最低<br>
         3.RL agent:1)具体智能体构造(TD3):一个动作网络两个评判网络 2)设置奖励值:R=r(通过红绿灯奖励)-ropt(速度惩罚)-ra(加速度惩罚)-rmon(安全监视器)<br>
         4.结果:训练+测评(自己对比+与GLOSA 策略对比+对惩罚单独测评)<br>
@@ -15,7 +16,7 @@
 
 # 从单车到车队(使用RL)
 ## 1.Research on Reinforcement-Learning-Based Truck Platooning Control Strategies in Highway On-Ramp Regions(2023)--->https://www.mdpi.com/2032-6653/14/10/273
-(1)<br>
+(1)提出一种基于 Platoon-MAPPO 的多智能体强化学习策略，用于卡车编队在高速公路匝道（on-ramp）段的纵向控制，从而在面对匝道干扰时保持车队稳定性、提高能效、减少道路占用。<br>
 (2)结构:1.introduction:介绍自动卡车队列(具体例子)+好处--->之前研究的不足(传统方法+深度学习)--->RL方法好处+MAPPO-Plooting方法是best<br>
 2.related work:传统方法(提供局部稳定性+string stability)--->提出具体的普通RL方法+不足--->具体场景下的应用(匝道)<br>
 3.Preliminaries and Methods:Preliminary Knowledge:强化学习基础相关的内容+多智能体RL---->集中训练分散执行方法<br>
