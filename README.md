@@ -19,7 +19,8 @@
 (2)结构:1.introduction:介绍自动卡车队列(具体例子)+好处--->之前研究的不足(传统方法+深度学习)--->RL方法好处+MAPPO-Plooting方法是best<br>
 2.related work:传统方法(提供局部稳定性+string stability)--->提出具体的普通RL方法+不足--->具体场景下的应用(匝道)<br>
 3.Preliminaries and Methods:Preliminary Knowledge:强化学习基础相关的内容+多智能体RL---->集中训练分散执行方法<br>
-Methods:<br>
+Methods:Truck Platoon Communication Topology:说明具体运作交换信息的车辆是前车和后车，避免了计算资源浪费<br>
+<br>
 (3)提供了MAPPO可以作为未来的baseline；<br>
    局部稳定性:每一辆车都能根据自己的控制系统，稳定地跟踪目标速度和位置。(就是每辆车都能控制好自己)；<br>
    string stability:整个车队在行驶过程中，误差不会沿着队列放大传播。(就是前面车减速1，后面都是1，不会2、3累加)<br>
