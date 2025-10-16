@@ -15,7 +15,11 @@
         5.结论<br>
 
 # 从单车到车队(使用RL)
-## 1.Research on Reinforcement-Learning-Based Truck Platooning Control Strategies in Highway On-Ramp Regions(2023)--->https://www.mdpi.com/2032-6653/14/10/273
+## 1.AHS research at the California PATH program and future AHS research needs(2008)--->https://ieeexplore.ieee.org/document/4640915
+概述 PATH 计划在自动化高速公路研究中的主要进展，并提出未来研究方向，是该领域早期的指导性研究之一。PATH研究第一个四车自动排纵向控制实验<br>
+## 2.Determination of the Order of Electronically Coupled Trucks on German Motorways--->https://ieeexplore.ieee.org/abstract/document/5406751
+
+## 3.Research on Reinforcement-Learning-Based Truck Platooning Control Strategies in Highway On-Ramp Regions(2023)--->https://www.mdpi.com/2032-6653/14/10/273
 (1)提出一种基于 Platoon-MAPPO 的多智能体强化学习策略，用于卡车编队在高速公路匝道（on-ramp）段的纵向控制，从而在面对匝道干扰时保持车队稳定性、提高能效、减少道路占用。<br>
 (2)结构:1.introduction:介绍自动卡车队列(具体例子)+好处--->之前研究的不足(传统方法+深度学习)--->RL方法好处+MAPPO-Plooting方法是best<br>
 2.related work:传统方法(提供局部稳定性+string stability)--->提出具体的普通RL方法+不足--->具体场景下的应用(匝道)<br>
