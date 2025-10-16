@@ -16,10 +16,12 @@
 
 # 从单车到车队(使用RL)
 ## 1.AHS research at the California PATH program and future AHS research needs(2008)--->https://ieeexplore.ieee.org/document/4640915
-概述 PATH 计划在自动化高速公路研究中的主要进展，并提出未来研究方向，是该领域早期的指导性研究之一。PATH研究第一个四车自动排纵向控制实验<br>
+概述 PATH 计划在自动化高速公路研究中的主要进展，并提出未来研究方向，是该领域早期的指导性研究之一,为后续的ITS研究铺垫基础。PATH研究第一个四车自动排纵向控制实验<br>
 ## 2.Determination of the Order of Electronically Coupled Trucks on German Motorways(2011)--->https://ieeexplore.ieee.org/abstract/document/5406751
 研究了在德国高速公路上电子耦合卡车如何排序与组织编队的策略。其方法基于 GPS-signatures轨迹/路径数据，分析哪些卡车在相近行驶路线与时间上能形成编队以减少燃油消耗与空气阻力。然而，该研究在算法的时变性、动态交通反应能力以及实时性方面已有一定局限，尤其在交通流波动大或车辆进入／退出频繁的场景中表现可能不佳。总体而言，该论文是电子耦合卡车／车队编队研究中的早期工作，为后续关于实时编队优化、车辆排序与混合交通环境下的车队控制提供了借鉴。
-## 3.Research on Reinforcement-Learning-Based Truck Platooning Control Strategies in Highway On-Ramp Regions(2023)--->https://www.mdpi.com/2032-6653/14/10/273
+## 3.An automated truck platoon for energy saving(2011)--->https://ieeexplore.ieee.org/document/6094549
+
+## 4.Research on Reinforcement-Learning-Based Truck Platooning Control Strategies in Highway On-Ramp Regions(2023)--->https://www.mdpi.com/2032-6653/14/10/273
 (1)提出一种基于 Platoon-MAPPO 的多智能体强化学习策略，用于卡车编队在高速公路匝道（on-ramp）段的纵向控制，从而在面对匝道干扰时保持车队稳定性、提高能效、减少道路占用。<br>
 (2)结构:1.introduction:介绍自动卡车队列(具体例子)+好处--->之前研究的不足(传统方法+深度学习)--->RL方法好处+MAPPO-Plooting方法是best<br>
 2.related work:传统方法(提供局部稳定性+string stability)--->提出具体的普通RL方法+不足--->具体场景下的应用(匝道)<br>
