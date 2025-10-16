@@ -22,7 +22,7 @@
 ## 3.An automated truck platoon for energy saving(2011)--->https://ieeexplore.ieee.org/document/6094549
 实车实验检验了三个重型牵引拖车卡车在不同跟车间距（10 m 到 4 m）及加减速、上坡／下坡、编队加入与退出等动态情形下的纵向控制效果，测量其燃油节省与气动阻力变化，结果显示在较小间距下跟车车节油显著（lead truck 节省约 4-5%，跟随车节省约 10-14%）。这文章是把CCA算法应用到实际车队，而没有提出新算法。(算是传统方法的实际应用了)
 ## 4.Cooperative Adaptive Cruise Control: A Reinforcement Learning Approach(2011)--->http://ieeexplore.ieee.org/document/5876320/
-
+算法结合了RL(Q-learning)和博弈论
 ## 5.Research on Reinforcement-Learning-Based Truck Platooning Control Strategies in Highway On-Ramp Regions(2023)--->https://www.mdpi.com/2032-6653/14/10/273
 (1)提出一种基于 Platoon-MAPPO 的多智能体强化学习策略，用于卡车编队在高速公路匝道（on-ramp）段的纵向控制，从而在面对匝道干扰时保持车队稳定性、提高能效、减少道路占用。<br>
 (2)结构:1.introduction:介绍自动卡车队列(具体例子)+好处--->之前研究的不足(传统方法+深度学习)--->RL方法好处+MAPPO-Plooting方法是best<br>
