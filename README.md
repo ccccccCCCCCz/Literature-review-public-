@@ -20,7 +20,7 @@
 ## 2.Determination of the Order of Electronically Coupled Trucks on German Motorways(2011)--->https://ieeexplore.ieee.org/abstract/document/5406751
 研究了在德国高速公路上电子耦合卡车如何排序与组织编队的策略。其方法基于 GPS-signatures轨迹/路径数据，分析哪些卡车在相近行驶路线与时间上能形成编队以减少燃油消耗与空气阻力。然而，该研究在算法的时变性、动态交通反应能力以及实时性方面已有一定局限，尤其在交通流波动大或车辆进入／退出频繁的场景中表现可能不佳。总体而言，该论文是电子耦合卡车／车队编队研究中的早期工作，为后续关于实时编队优化、车辆排序与混合交通环境下的车队控制提供了借鉴。
 ## 3.An automated truck platoon for energy saving(2011)--->https://ieeexplore.ieee.org/document/6094549
-
+实车实验检验了三个重型牵引拖车卡车在不同跟车间距（10 m 到 4 m）及加减速、上坡／下坡、编队加入与退出等动态情形下的纵向控制效果，测量其燃油节省与气动阻力变化，结果显示在较小间距下跟车车节油显著（lead truck 节省约 4-5%，跟随车节省约 10-14%）。这文章是把CCA算法应用到实际，而没有提出新算法。
 ## 4.Research on Reinforcement-Learning-Based Truck Platooning Control Strategies in Highway On-Ramp Regions(2023)--->https://www.mdpi.com/2032-6653/14/10/273
 (1)提出一种基于 Platoon-MAPPO 的多智能体强化学习策略，用于卡车编队在高速公路匝道（on-ramp）段的纵向控制，从而在面对匝道干扰时保持车队稳定性、提高能效、减少道路占用。<br>
 (2)结构:1.introduction:介绍自动卡车队列(具体例子)+好处--->之前研究的不足(传统方法+深度学习)--->RL方法好处+MAPPO-Plooting方法是best<br>
