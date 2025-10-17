@@ -25,7 +25,9 @@
 让联网车辆（CACC系统）在不依赖精确模型的前提下，通过学习实现更安全、更节能的车队跟驰控制。使用了分层算法，算法结合了RL(Q-learning)和博弈论，并提出了RL的分层结构的思想(非常的简单，只是单纯把policy和Q分别分开来而已，严格来说不是现代分层结构)。其中上层管理层使用RL(值函数逼近强化学习以及局部Q-learning(TJA和PJA))，下层引导层使用传统控制器。将RL首次用于CACC系统
 ## 5.Survey on Platoon-Based Vehicular Cyber-Physical Systems--->https://ieeexplore.ieee.org/document/7056505
 综述性质的文章系统梳理基于车队（platoon） 的联网车辆系统（Vehicular Cyber-Physical Systems, VCPS／也称车联网 + 控制融合系统），车队运动模型、车流模型、车间距／速度关系，车队如何组建、合并／拆分、车队内控制策略、协作驾驶机制以及车队稳定性。介绍混合通信 + 交通仿真平台、典型工具链。总结了队列行驶的关键技术和挑战。
-## 6.Research on Reinforcement-Learning-Based Truck Platooning Control Strategies in Highway On-Ramp Regions(2023)--->https://www.mdpi.com/2032-6653/14/10/273
+## 6.An Intelligent Path Planning Scheme of Autonomous Vehicles Platoon Using Deep Reinforcement Learning on Network Edge(2020)--->https://ieeexplore.ieee.org/document/9102259
+
+## 7.Research on Reinforcement-Learning-Based Truck Platooning Control Strategies in Highway On-Ramp Regions(2023)--->https://www.mdpi.com/2032-6653/14/10/273
 (1)提出一种基于 Platoon-MAPPO 的多智能体强化学习策略，用于卡车编队在高速公路匝道（on-ramp）段的纵向控制，从而在面对匝道干扰时保持车队稳定性、提高能效、减少道路占用。<br>
 (2)结构:1.introduction:介绍自动卡车队列(具体例子)+好处--->之前研究的不足(传统方法+深度学习)--->RL方法好处+MAPPO-Plooting方法是best<br>
 2.related work:传统方法(提供局部稳定性+string stability)--->提出具体的普通RL方法+不足--->具体场景下的应用(匝道)<br>
