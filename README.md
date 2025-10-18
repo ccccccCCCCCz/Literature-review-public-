@@ -28,7 +28,7 @@
 ## 6.An Intelligent Path Planning Scheme of Autonomous Vehicles Platoon Using Deep Reinforcement Learning on Network Edge(2020)--->https://ieeexplore.ieee.org/document/9102259
 提出了一种基于深度强化学习并部署于网络边缘的自动驾驶车队智能路径规划方法。该研究将车队路径规划建模为一个在任务时限约束下最小化燃油消耗的优化问题，利用强化学习框架在动态交通环境中自适应地学习最优路径策略。同时，引入边缘计算以降低车辆端的计算负担和决策延迟。主要是在路径规划方面(选择耗能最少的)。依靠RL减少能源消耗。
 ## 7.Decentralized Cooperative Merging of Platoons of Connected and Automated Vehicles at Highway On-Ramps(2021)--->https://ieeexplore.ieee.org/document/9483390
-
+提出了分散式协同控制方法，使高速公路匝道上的自动驾驶车队能够安全、高效地并入主干道车队，将复杂的二维多排协作问题转化为一维排跟随控制问题。先计算通过时间，再计算燃油消耗。
 ## 8.Research on Reinforcement-Learning-Based Truck Platooning Control Strategies in Highway On-Ramp Regions(2023)--->https://www.mdpi.com/2032-6653/14/10/273
 (1)提出一种基于 Platoon-MAPPO 的多智能体强化学习策略，用于卡车编队在高速公路匝道（on-ramp）段的纵向控制，从而在面对匝道干扰时保持车队稳定性、提高能效、减少道路占用。<br>
 (2)结构:1.introduction:介绍自动卡车队列(具体例子)+好处--->之前研究的不足(传统方法+深度学习)--->RL方法好处+MAPPO-Plooting方法是best<br>
