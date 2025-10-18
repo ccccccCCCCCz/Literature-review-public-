@@ -18,7 +18,7 @@
 ## 1.AHS research at the California PATH program and future AHS research needs(2008)--->https://ieeexplore.ieee.org/document/4640915
 概述 PATH 计划在自动化高速公路研究中的主要进展，并提出未来研究方向，是该领域早期的指导性研究之一,为后续的ITS研究铺垫基础。PATH研究第一个四车自动排纵向控制实验<br>
 ## 2.Determination of the Order of Electronically Coupled Trucks on German Motorways(2011)--->https://ieeexplore.ieee.org/abstract/document/5406751
-研究了在德国高速公路上电子耦合卡车如何排序与组织编队的策略。其方法基于 GPS-signatures轨迹/路径数据，分析哪些卡车在相近行驶路线与时间上能形成编队以减少燃油消耗与空气阻力。然而，该研究在算法的时变性、动态交通反应能力以及实时性方面已有一定局限，尤其在交通流波动大或车辆进入／退出频繁的场景中表现可能不佳。总体而言，该论文是电子耦合卡车／车队编队研究中的早期工作，为后续关于实时编队优化、车辆排序与混合交通环境下的车队控制提供了借鉴。
+研究了在德国高速公路上电子耦合卡车如何排序与组织编队的策略。其方法基于 GPS-signatures轨迹/路径数据，分析哪些卡车在相近行驶路线与时间上能形成编队以减少燃油消耗与空气阻力。然而，该研究在算法的时变性、动态交通反应能力以及实时性方面已有一定局限，尤其在交通流波动大或车辆进入／退出频繁的场景中表现可能不佳。总体而言，该论文是电子耦合卡车／车队编队研究中的早期工作，为后续关于实时编队优化、车辆排序与混合交通环境下的车队控制提供了借鉴。算是卡车队列的编队的先驱了。
 ## 3.An automated truck platoon for energy saving(2011)--->https://ieeexplore.ieee.org/document/6094549
 实车实验检验了三个重型牵引拖车卡车在不同跟车间距（10 m 到 4 m）及加减速、上坡／下坡、编队加入与退出等动态情形下的纵向控制效果，测量其燃油节省与气动阻力变化，结果显示在较小间距下跟车车节油显著（lead truck 节省约 4-5%，跟随车节省约 10-14%）。这文章是把CCA算法应用到实际车队，而没有提出新算法。(算是传统方法的实际应用了)
 ## 4.Cooperative Adaptive Cruise Control: A Reinforcement Learning Approach(2011)--->http://ieeexplore.ieee.org/document/5876320/
@@ -26,8 +26,10 @@
 ## 5.Survey on Platoon-Based Vehicular Cyber-Physical Systems--->https://ieeexplore.ieee.org/document/7056505
 综述性质的文章系统梳理基于车队（platoon） 的联网车辆系统（Vehicular Cyber-Physical Systems, VCPS／也称车联网 + 控制融合系统），车队运动模型、车流模型、车间距／速度关系，车队如何组建、合并／拆分、车队内控制策略、协作驾驶机制以及车队稳定性。介绍混合通信 + 交通仿真平台、典型工具链。总结了队列行驶的关键技术和挑战。
 ## 6.An Intelligent Path Planning Scheme of Autonomous Vehicles Platoon Using Deep Reinforcement Learning on Network Edge(2020)--->https://ieeexplore.ieee.org/document/9102259
-提出了一种基于深度强化学习并部署于网络边缘的自动驾驶车队智能路径规划方法。该研究将车队路径规划建模为一个在任务时限约束下最小化燃油消耗的优化问题，利用强化学习框架在动态交通环境中自适应地学习最优路径策略。同时，引入边缘计算以降低车辆端的计算负担和决策延迟。主要是在路径规划方面(选择耗能最少的)。
-## 7.Research on Reinforcement-Learning-Based Truck Platooning Control Strategies in Highway On-Ramp Regions(2023)--->https://www.mdpi.com/2032-6653/14/10/273
+提出了一种基于深度强化学习并部署于网络边缘的自动驾驶车队智能路径规划方法。该研究将车队路径规划建模为一个在任务时限约束下最小化燃油消耗的优化问题，利用强化学习框架在动态交通环境中自适应地学习最优路径策略。同时，引入边缘计算以降低车辆端的计算负担和决策延迟。主要是在路径规划方面(选择耗能最少的)。依靠RL减少能源消耗。
+## 7.Decentralized Cooperative Merging of Platoons of Connected and Automated Vehicles at Highway On-Ramps(2021)--->https://ieeexplore.ieee.org/document/9483390
+
+## 8.Research on Reinforcement-Learning-Based Truck Platooning Control Strategies in Highway On-Ramp Regions(2023)--->https://www.mdpi.com/2032-6653/14/10/273
 (1)提出一种基于 Platoon-MAPPO 的多智能体强化学习策略，用于卡车编队在高速公路匝道（on-ramp）段的纵向控制，从而在面对匝道干扰时保持车队稳定性、提高能效、减少道路占用。<br>
 (2)结构:1.introduction:介绍自动卡车队列(具体例子)+好处--->之前研究的不足(传统方法+深度学习)--->RL方法好处+MAPPO-Plooting方法是best<br>
 2.related work:传统方法(提供局部稳定性+string stability)--->提出具体的普通RL方法+不足--->具体场景下的应用(匝道)<br>
