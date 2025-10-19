@@ -43,6 +43,8 @@ Crucial Elements:主要介绍PPO的构成(批判者观察全局+参与者只关�
 (3)提供了MAPPO可以作为未来的baseline；<br>
    局部稳定性:每一辆车都能根据自己的控制系统，稳定地跟踪目标速度和位置。(就是每辆车都能控制好自己)；<br>
    string stability:整个车队在行驶过程中，误差不会沿着队列放大传播。(就是前面车减速1，后面都是1，不会2、3累加)<br>
+# 多智能体RL
+
 
 # GVRP(宏观，暂时先不看)
 ## 1.A Green Vehicle Routing Problem(2012)
