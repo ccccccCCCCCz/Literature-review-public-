@@ -23,7 +23,7 @@
 实车实验检验了三个重型牵引拖车卡车在不同跟车间距（10 m 到 4 m）及加减速、上坡／下坡、编队加入与退出等动态情形下的纵向控制效果，测量其燃油节省与气动阻力变化，结果显示在较小间距下跟车车节油显著（lead truck 节省约 4-5%，跟随车节省约 10-14%）。这文章是把CCA算法应用到实际车队，而没有提出新算法。(算是传统方法的实际应用了)
 ## 4.Cooperative Adaptive Cruise Control: A Reinforcement Learning Approach(2011)--->http://ieeexplore.ieee.org/document/5876320/
 让联网车辆（CACC系统）在不依赖精确模型的前提下，通过学习实现更安全、更节能的车队跟驰控制。使用了分层算法，算法结合了RL(Q-learning)和博弈论，并提出了RL的分层结构的思想(非常的简单，只是单纯把policy和Q分别分开来而已，严格来说不是现代分层结构)。其中上层管理层使用RL(值函数逼近强化学习以及局部Q-learning(TJA和PJA))，下层引导层使用传统控制器。将RL首次用于CACC系统
-## 5.Survey on Platoon-Based Vehicular Cyber-Physical Systems--->https://ieeexplore.ieee.org/document/7056505
+## 5.Survey on Platoon-Based Vehicular Cyber-Physical Systems(2016)--->https://ieeexplore.ieee.org/document/7056505
 综述性质的文章系统梳理基于车队（platoon） 的联网车辆系统（Vehicular Cyber-Physical Systems, VCPS／也称车联网 + 控制融合系统），车队运动模型、车流模型、车间距／速度关系，车队如何组建、合并／拆分、车队内控制策略、协作驾驶机制以及车队稳定性。介绍混合通信 + 交通仿真平台、典型工具链。总结了队列行驶的关键技术和挑战。
 ## 6.An Intelligent Path Planning Scheme of Autonomous Vehicles Platoon Using Deep Reinforcement Learning on Network Edge(2020)--->https://ieeexplore.ieee.org/document/9102259
 提出了一种基于深度强化学习并部署于网络边缘的自动驾驶车队智能路径规划方法。该研究将车队路径规划建模为一个在任务时限约束下最小化燃油消耗的优化问题，利用强化学习框架在动态交通环境中自适应地学习最优路径策略。同时，引入边缘计算以降低车辆端的计算负担和决策延迟。主要是在路径规划方面(选择耗能最少的)。依靠RL减少能源消耗。
