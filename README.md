@@ -48,6 +48,16 @@ Crucial Elements:主要介绍PPO的构成(批判者观察全局+参与者只关�
 # 多智能体RL
 
 
+# 电气化道路(ERS)
+## 1. Electric road system technologies in Sweden Gaining experience from research and demo facilities(2020)
+(1)是对截止2020年的瑞典购买的4个ERS技术试点的综述 <br>
+(2)一共三种方式，架空线路、公路电轨、感应发电。其中架空线路最成熟 <br>
+(3)我认为公路电轨过于复杂不太可能，架空线路现在还不错，感应的话技术可能还需要进一步优化。
+## 2. Route optimization of battery electric vehicles using dynamic charging on electrified roads(2024)
+(1)货物的安全是大多数运营商可能不喜欢在公共充电站为其车队充电的个原因，安装私人充电站在经济上并不是一个可行的选择。此外，绕道前往充电站和充电时间长会降低车辆和驾驶员的利用率并增加成本。<br>
+(2)电动汽车可以行驶超过 2000 公里的距离而无需充电。我们的实验还表明，在大约 30% 至 40% 的道路上建立基础设施足以确保电动汽车的可靠通行。
+(3)可以证明与电动汽车与ERS道路结合的可行性
+
 # GVRP(宏观，暂时先不看)        
 ## 1.A Green Vehicle Routing Problem(2012)
 (1)提出两种方法the Modified Clarke and Wright Savings heuristic and the Density-Based Clustering Algorithm(MCWS和DBCA)<br>
@@ -59,7 +69,7 @@ Crucial Elements:主要介绍PPO的构成(批判者观察全局+参与者只关�
    3.深入了解站点和客户的地理分布对运营可行性的影响；<br>
    4.鉴于当前可用的车辆技术和有限的支持基础设施部署，支持机构减少碳足迹的工具。
 (5)个人评价:使用了两种新方法与最优解对比，没差太多。也算是电车充电站的相关VRP的开端了。
-# 电动卡车
+# 电动卡车(可以不看)
 ## 1. Is electric truck a viable alternative to diesel truck in long-haul operation?(2024)
 ### 提出电动卡车在物流运输方面与原来汽油重卡的对比:
 (1)提出具有协调充电计划的电动卡车路线和驾驶员调度问题(eTRDSP-CS)<br>
@@ -68,12 +78,3 @@ Crucial Elements:主要介绍PPO的构成(批判者观察全局+参与者只关�
 ## 2.Advances in EV wireless charging technology – A systematic review and future trends(2024)
 (1)提出WPT(无线充电)<br>
 (2)对比传统插入式更方便
-# 电气化道路
-## 1. Electric road system technologies in Sweden Gaining experience from research and demo facilities(2020)
-(1)是对截止2020年的瑞典购买的4个ERS技术试点的综述 <br>
-(2)一共三种方式，架空线路、公路电轨、感应发电。其中架空线路最成熟 <br>
-(3)我认为公路电轨过于复杂不太可能，架空线路现在还不错，感应的话技术可能还需要进一步优化。
-## 2. Route optimization of battery electric vehicles using dynamic charging on electrified roads(2024)
-(1)货物的安全是大多数运营商可能不喜欢在公共充电站为其车队充电的个原因，安装私人充电站在经济上并不是一个可行的选择。此外，绕道前往充电站和充电时间长会降低车辆和驾驶员的利用率并增加成本。<br>
-(2)电动汽车可以行驶超过 2000 公里的距离而无需充电。我们的实验还表明，在大约 30% 至 40% 的道路上建立基础设施足以确保电动汽车的可靠通行。
-(3)可以证明与电动汽车与ERS道路结合的可行性
