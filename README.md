@@ -31,7 +31,9 @@
 提出了分散式协同控制方法，使高速公路匝道上的自动驾驶车队能够安全、高效地并入主干道车队，将复杂的二维多排协作问题转化为一维排跟随控制问题。先计算通过时间，再计算燃油消耗。
 ## 8.A Reinforcement Learning-Based Vehicle Platoon Control Strategy for Reducing Energy Consumption in Traffic Oscillations(2021)--->https://ieeexplore.ieee.org/document/9410239
 提出了一种通信近端策略优化（CommPPO）算法(主要还是PPO)来控制车队。制定新的奖励以解决虚假奖励和“惰性智能体”问题，采用课程学习方法(从简单环境到难环境)来减少崩溃并加快训练速度，最终实现交通振荡下的能耗优化。后续如果需要学习多智能体的历史可以在这篇文章里看。
-## 9.Research on Reinforcement-Learning-Based Truck Platooning Control Strategies in Highway On-Ramp Regions(2023)--->https://www.mdpi.com/2032-6653/14/10/273
+## 9.Multi-Agent Reinforcement Learning for Highway Platooning(2023)--->https://www.mdpi.com/2079-9292/12/24/4963
+MARL+PPO协作，重点是实现对不同速度条件的自适应响应，并涵盖不同的队列速度。我的评价是这篇文章用的方法是没那么新颖的，主要是为了工程落地的可行性来编写的，用的甚至是即时奖励这种reward，有点抽象了。
+## 10.Research on Reinforcement-Learning-Based Truck Platooning Control Strategies in Highway On-Ramp Regions(2023)--->https://www.mdpi.com/2032-6653/14/10/273
 (1)提出一种基于 Platoon-MAPPO 的多智能体强化学习策略，用于卡车编队在高速公路匝道（on-ramp）段的纵向控制，从而在面对匝道干扰时保持车队稳定性、提高能效、减少道路占用。<br>
 (2)结构:1.introduction:介绍自动卡车队列(具体例子)+好处--->之前研究的不足(传统方法+深度学习)--->RL方法好处+MAPPO-Plooting方法是best<br>
 2.related work:传统方法(提供局部稳定性+string stability)--->提出具体的普通RL方法+不足--->具体场景下的应用(匝道)<br>
@@ -46,7 +48,7 @@ Crucial Elements:主要介绍PPO的构成(批判者观察全局+参与者只关�
 # 多智能体RL
 
 
-# GVRP(宏观，暂时先不看)
+# GVRP(宏观，暂时先不看)        
 ## 1.A Green Vehicle Routing Problem(2012)
 (1)提出两种方法the Modified Clarke and Wright Savings heuristic and the Density-Based Clustering Algorithm(MCWS和DBCA)<br>
 (2)其中MCWS继承C-W算法(C-W算法就是计算两点之间节约值进行合并，类似最小生成树)，DBCA继承DBSCAN(DBSCAN就是聚类的分类方式)
