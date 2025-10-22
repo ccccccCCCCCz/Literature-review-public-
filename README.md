@@ -53,7 +53,9 @@ Crucial Elements:主要介绍PPO的构成(批判者观察全局+参与者只关�
 主要讲述耶夫勒堡地区用于山特维肯的示范设施和罗瑟斯贝格 Utvecklings AB （eRoadArlanda） 用于阿兰达的示范设施，说明瑞典当时所设计的ERS四个项目，对截止2020年的瑞典购买的4个ERS技术试点的综述。一共三种方式，架空线路、公路电轨、感应发电。其中架空线路最成熟。我认为公路电轨过于复杂不太可能，架空线路现在还不错，感应的话技术可能还需要进一步优化。
 ## 2.A Fundamental Analysis of the Impact on Traffic Assignment by Toll System of Electric Road System(2024)--->http://arxiv.org/abs/2402.07144
 该研究分析了电气化道路系统（ERS）中收费制度（toll system）对交通分配（traffic assignment） 的影响，发现简单的收费模式可能导致总旅行时间、充电量和 ERS 利用率均未达最优化。说明了ERS 在交通流分配／费用体系中的影响。
-## 3. Route optimization of battery electric vehicles using dynamic charging on electrified roads(2024)
+## 3.A network design perspective on the adoption potential of electric road systems in early development stages--->https://www.sciencedirect.com/science/article/pii/S0306261924002708
+考虑了卡车没有ERS可以行驶的距离、在ERS道路上行驶的最低距离、最大绕行去ERS的距离。双走廊在捕获的总运输流量的百分比方面优于集中网络，走廊捕获的行程连接了相距较远的区域。解释了为什么长途电动重卡要选择长廊类型的ERS。
+## 4. Route optimization of battery electric vehicles using dynamic charging on electrified roads(2024)
 (1)货物的安全是大多数运营商可能不喜欢在公共充电站为其车队充电的个原因，安装私人充电站在经济上并不是一个可行的选择。此外，绕道前往充电站和充电时间长会降低车辆和驾驶员的利用率并增加成本。<br>
 (2)电动汽车可以行驶超过 2000 公里的距离而无需充电。我们的实验还表明，在大约 30% 至 40% 的道路上建立基础设施足以确保电动汽车的可靠通行。
 (3)可以证明与电动汽车与ERS道路结合的可行性
