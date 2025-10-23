@@ -46,8 +46,8 @@ Crucial Elements:主要介绍PPO的构成(批判者观察全局+参与者只关�
    局部稳定性:每一辆车都能根据自己的控制系统，稳定地跟踪目标速度和位置。(就是每辆车都能控制好自己)；<br>
    string stability:整个车队在行驶过程中，误差不会沿着队列放大传播。(就是前面车减速1，后面都是1，不会2、3累加)<br>
 # 多智能体RL
-
-
+## 1.Hierarchical reinforcement learning-based traffic signal control(2025)--->https://www.nature.com/articles/s41598-025-18449-1
+提出了一个名为 SHLight的分层强化学习（Hierarchical RL, HRL）方法，用于交通信号控制。主要分为两层，上层为经理层负责全局目标的控制，工人们则负责区域内的控制，采用中央训练、分散执行(CTDE)方法，辅助动作的双Actor-Critic融合机制，每层各一个。后续可以参考他的构建方法，尤其是双Actor-Critic方法。
 # 电气化道路(ERS)
 ## 1. Electric road system technologies in Sweden Gaining experience from research and demo facilities(2020)
 主要讲述耶夫勒堡地区用于山特维肯的示范设施和罗瑟斯贝格 Utvecklings AB （eRoadArlanda） 用于阿兰达的示范设施，说明瑞典当时所设计的ERS四个项目，对截止2020年的瑞典购买的4个ERS技术试点的综述。一共三种方式，架空线路、公路电轨、感应发电。其中架空线路最成熟。我认为公路电轨过于复杂不太可能，架空线路现在还不错，感应的话技术可能还需要进一步优化。
