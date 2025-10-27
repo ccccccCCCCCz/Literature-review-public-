@@ -49,7 +49,7 @@ Crucial Elements:主要介绍PPO的构成(批判者观察全局+参与者只关�
 ## 1.Hierarchical reinforcement learning based energy management strategy for hybrid electric vehicle(2022)--->https://www.sciencedirect.com/science/article/pii/S0360544221019514
 提出了优化能源消耗的分层RL方法(DRL-H)以解决HEV能耗问题，解决了稀疏奖励的问题。上层决定最优油耗率，使每个子条件达到最佳燃料。
 ## 2.Multi-Agent Deep Reinforcement Learning Cooperative Control Model for Autonomous Vehicle Merging into Platoon in Highway--->https://www.mdpi.com/2032-6653/16/4/225
-
+提出MAMQPPO，上层（或第一层）利用最大 Q-值方法（DQN 风格）来选择离散动作，下层（或第二层）采用 PPO（近端策略优化）方法处理连续控制动作，同时采用 Actor-Critic 网络结构，在多智能体训练框架中实现协作控制。还是双层Actor-Critic结构分别负责AV agent和Plooting agent。首次将“AV 横纵控制”与“车队纵控＋间隙选择”整合在一个统一 MA-DRL 架构中，用于高速公路合流场景。
 ## 3.Hierarchical reinforcement learning-based traffic signal control(2025)--->https://www.nature.com/articles/s41598-025-18449-1
 提出了一个名为 SHLight的分层强化学习（Hierarchical RL, HRL）方法，用于交通信号控制。主要分为两层，上层为经理层负责全局目标的控制，工人们则负责区域内的控制，采用中央训练、分散执行(CTDE)方法，辅助动作的双Actor-Critic融合机制，每层各一个。后续可以参考他的构建方法，尤其是双Actor-Critic方法。
 # 电气化道路(ERS)
