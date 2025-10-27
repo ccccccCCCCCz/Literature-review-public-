@@ -48,14 +48,16 @@ Crucial Elements:主要介绍PPO的构成(批判者观察全局+参与者只关�
 # 多智能体RL
 ## 1.Hierarchical reinforcement learning based energy management strategy for hybrid electric vehicle(2022)--->https://www.sciencedirect.com/science/article/pii/S0360544221019514
 提出了优化能源消耗的分层RL方法(DRL-H)以解决HEV能耗问题，解决了稀疏奖励的问题。上层决定最优油耗率，使每个子条件达到最佳燃料。
-## 2.Hierarchical reinforcement learning-based traffic signal control(2025)--->https://www.nature.com/articles/s41598-025-18449-1
+## 2.Multi-Agent Deep Reinforcement Learning Cooperative Control Model for Autonomous Vehicle Merging into Platoon in Highway--->https://www.mdpi.com/2032-6653/16/4/225
+
+## 3.Hierarchical reinforcement learning-based traffic signal control(2025)--->https://www.nature.com/articles/s41598-025-18449-1
 提出了一个名为 SHLight的分层强化学习（Hierarchical RL, HRL）方法，用于交通信号控制。主要分为两层，上层为经理层负责全局目标的控制，工人们则负责区域内的控制，采用中央训练、分散执行(CTDE)方法，辅助动作的双Actor-Critic融合机制，每层各一个。后续可以参考他的构建方法，尤其是双Actor-Critic方法。
 # 电气化道路(ERS)
 ## 1. Electric road system technologies in Sweden Gaining experience from research and demo facilities(2020)
 主要讲述耶夫勒堡地区用于山特维肯的示范设施和罗瑟斯贝格 Utvecklings AB （eRoadArlanda） 用于阿兰达的示范设施，说明瑞典当时所设计的ERS四个项目，对截止2020年的瑞典购买的4个ERS技术试点的综述。一共三种方式，架空线路、公路电轨、感应发电。其中架空线路最成熟。我认为公路电轨过于复杂不太可能，架空线路现在还不错，感应的话技术可能还需要进一步优化。
 ## 2.A Fundamental Analysis of the Impact on Traffic Assignment by Toll System of Electric Road System(2024)--->http://arxiv.org/abs/2402.07144
 该研究分析了电气化道路系统（ERS）中收费制度（toll system）对交通分配（traffic assignment） 的影响，发现简单的收费模式可能导致总旅行时间、充电量和 ERS 利用率均未达最优化。说明了ERS 在交通流分配／费用体系中的影响。
-## 3.A network design perspective on the adoption potential of electric road systems in early development stages--->https://www.sciencedirect.com/science/article/pii/S0306261924002708
+## 3.A network design perspective on the adoption potential of electric road systems in early development stages(2025)--->https://www.sciencedirect.com/science/article/pii/S0306261924002708
 考虑了卡车没有ERS可以行驶的距离、在ERS道路上行驶的最低距离、最大绕行去ERS的距离。双走廊在捕获的总运输流量的百分比方面优于集中网络，走廊捕获的行程连接了相距较远的区域。解释了为什么长途电动重卡要选择长廊类型的ERS。
 ## 4. Route optimization of battery electric vehicles using dynamic charging on electrified roads(2024)
 (1)货物的安全是大多数运营商可能不喜欢在公共充电站为其车队充电的个原因，安装私人充电站在经济上并不是一个可行的选择。此外，绕道前往充电站和充电时间长会降低车辆和驾驶员的利用率并增加成本。<br>
