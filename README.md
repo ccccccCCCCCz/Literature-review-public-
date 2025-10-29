@@ -47,7 +47,7 @@ Crucial Elements:主要介绍PPO的构成(批判者观察全局+参与者只关�
    string stability:整个车队在行驶过程中，误差不会沿着队列放大传播。(就是前面车减速1，后面都是1，不会2、3累加)<br>
 # 多智能体RL
 ## 1.Why Does Hierarchy (Sometimes) Work So Well in Reinforcement Learning?(2019)--->http://arxiv.org/abs/1909.10618
-
+层次结构的大多数优势，其实来自于更好的探索（exploration），而不是训练或表示上的简化。奖励稀疏、任务长、需要跨越多个阶段，适用层次结构。
 ## 2.Hierarchical reinforcement learning based energy management strategy for hybrid electric vehicle(2022)--->https://www.sciencedirect.com/science/article/pii/S0360544221019514
 提出了优化能源消耗的分层RL方法(DRL-H)以解决HEV能耗问题，解决了稀疏奖励的问题。上层决定最优油耗率，使每个子条件达到最佳燃料。
 ## 3.Multi-Agent Deep Reinforcement Learning Cooperative Control Model for Autonomous Vehicle Merging into Platoon in Highway(2025)--->https://www.mdpi.com/2032-6653/16/4/225
