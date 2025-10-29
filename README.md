@@ -46,11 +46,13 @@ Crucial Elements:主要介绍PPO的构成(批判者观察全局+参与者只关�
    局部稳定性:每一辆车都能根据自己的控制系统，稳定地跟踪目标速度和位置。(就是每辆车都能控制好自己)；<br>
    string stability:整个车队在行驶过程中，误差不会沿着队列放大传播。(就是前面车减速1，后面都是1，不会2、3累加)<br>
 # 多智能体RL
-## 1.Hierarchical reinforcement learning based energy management strategy for hybrid electric vehicle(2022)--->https://www.sciencedirect.com/science/article/pii/S0360544221019514
+## 1.Why Does Hierarchy (Sometimes) Work So Well in Reinforcement Learning?(2019)--->http://arxiv.org/abs/1909.10618
+
+## 2.Hierarchical reinforcement learning based energy management strategy for hybrid electric vehicle(2022)--->https://www.sciencedirect.com/science/article/pii/S0360544221019514
 提出了优化能源消耗的分层RL方法(DRL-H)以解决HEV能耗问题，解决了稀疏奖励的问题。上层决定最优油耗率，使每个子条件达到最佳燃料。
-## 2.Multi-Agent Deep Reinforcement Learning Cooperative Control Model for Autonomous Vehicle Merging into Platoon in Highway--->https://www.mdpi.com/2032-6653/16/4/225
+## 3.Multi-Agent Deep Reinforcement Learning Cooperative Control Model for Autonomous Vehicle Merging into Platoon in Highway(2025)--->https://www.mdpi.com/2032-6653/16/4/225
 提出MAMQPPO，上层（或第一层）利用最大 Q-值方法（DQN 风格）来选择离散动作，下层（或第二层）采用 PPO（近端策略优化）方法处理连续控制动作，同时采用 Actor-Critic 网络结构，在多智能体训练框架中实现协作控制。还是双层Actor-Critic结构分别负责AV agent和Plooting agent。首次将“AV 横纵控制”与“车队纵控＋间隙选择”整合在一个统一 MA-DRL 架构中，用于高速公路合流场景。
-## 3.Hierarchical reinforcement learning-based traffic signal control(2025)--->https://www.nature.com/articles/s41598-025-18449-1
+## 4.Hierarchical reinforcement learning-based traffic signal control(2025)--->https://www.nature.com/articles/s41598-025-18449-1
 提出了一个名为 SHLight的分层强化学习（Hierarchical RL, HRL）方法，用于交通信号控制。主要分为两层，上层为经理层负责全局目标的控制，工人们则负责区域内的控制，采用中央训练、分散执行(CTDE)方法，辅助动作的双Actor-Critic融合机制，每层各一个。后续可以参考他的构建方法，尤其是双Actor-Critic方法。
 # 电气化道路(ERS)
 ## 1. Electric road system technologies in Sweden Gaining experience from research and demo facilities(2020)
