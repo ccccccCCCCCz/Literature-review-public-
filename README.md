@@ -2,8 +2,9 @@
 # 最终目的:让自动驾驶电动卡车在存在电气化公路（ERS）的环境中，自主决定“何时走ERS路段 / 何时编队 / 何时独行 / 何时充电”，以最小化能耗 + 行程时间 + 充电次数。(宏观+微观)
 
 # 论文复现
-## 1.Combat Urban Congestion via Collaboration: Heterogeneous GNN-Based MARL for Coordinated Platooning and Traffic Signal Control(2025)--->https://ieeexplore.ieee.org/abstract/document/10977660
+## 1.Combat Urban Congestion via Collaboration: Heterogeneous GNN-Based MARL for Coordinated Platooning and Traffic Signal Control(2025）--->https://ieeexplore.ieee.org/abstract/document/10977660
 提出了一种基于异构图神经网络（Heterogeneous GNN）的多智能体强化学习（MARL）方法，用于同时协调“车队编队控制（platooning）”和“交通信号控制”。将车队控制（Platooning）和信号控制（Traffic Signal Control） 视为两类不同的智能体。每类智能体有独立的观测空间、动作空间和奖励函数，使用采用 alternating optimization，让不同类型的智能体交替更新策略。异构图神经网络表达不同类型智能体之间的交互关系。
+其实就是siganl 和platooning分别设为不同agent并获取自己的局部观测，然后异构网络的node，而edge则根据是有三种(siganl->platooning,signal->signal,platooning->signal),并通过两者进行信息交互。其中不同agent之间的交互通过GNN进行，GNN进行不同node的信息交互，完成信息的上下文融合后，传递给policy network去进行动作，最后在MARL中更新GNN与policy的参数。
 # 单车RL控制
 ## 1.Deep reinforcement learning enabled self-learning control for energy efficient driving(2019)--->https://www.sciencedirect.com/science/article/pii/S0968090X18318862
 (1)这篇论文提出了一种基于深度强化学习（DQN 与 DDQN）的自学习能量管理方法，使插电式混合动力车辆（PHEV）能够在无需预定义驾驶循环的情况下实现实时能效最优控制。<br>
