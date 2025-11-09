@@ -7,6 +7,8 @@
 其实就是siganl 和platooning分别设为不同agent并获取自己的局部观测，然后异构网络的node，而edge则根据是有三种(siganl->platooning,signal->signal,platooning->signal),并通过两者进行信息交互。其中不同agent之间的交互通过GNN进行，GNN进行不同node的信息交互，完成信息的上下文融合后，传递给policy network去进行动作，最后在MARL中更新GNN与policy的参数。(这篇论文的开源代码存在问题，代码与ray框架版本是一定会有冲突的，建议是看看得了，根本无法复现)
 
 ## 2.https://github.com/OkYongChoi/sumo-marl(这个能复现，不过非常简单的信号控制，只是使用了MADDPG进行控制)
+参考文档：Lowe, Ryan, et al. "Multi-agent actor-critic for mixed cooperative-competitive environments." Advances in neural information processing systems 30 (2017).
+Egea, Alvaro Cabrejas, et al. "Assessment of reward functions for reinforcement learning traffic signal control under real-world limitations." 2020 IEEE International Conference on Systems, Man, and Cybernetics (SMC). IEEE, 2020.
 
 # 车队能耗建模
 ## 1.Modeling Relationship between Truck Fuel Consumption and Driving Behavior Using Data from Internet of Vehicles(2018)--->https://onlinelibrary.wiley.com/doi/abs/10.1111/mice.12344
